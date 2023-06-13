@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Лого.png">
+    <title>Пекарня ПечьМагь</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Лого.png" class="logo"></a>
+        <nav>
+            <ul class="punkts">
+                <a href="index.html" class="headers"><li>Главная</li></a>
+                <a onclick="str4()" href="#order4" class="headers"><li>О нас</li></a>
+                <a onclick="str5()" href="#order5" class="headers"><li>Корзина</li></a>
+                <a href="#pF1" class="headers scroll"><li>Контакты</li></a>
+            </ul>
+
+            <div class="basketNav">
+                <a onclick="str5()" href="#order5"><img src="images/корзина.png" class="basketImg"></a>
+                <div class="price_result">0 &#8381;</div>
+            </div>
+        </nav>
+        
+    </header>
+    <div class="naver">
+        <div>
+            <ul class="classPies">
+                <a onclick="str1()" href="#order1" class="headers2"><li>Пироги Сытные</li></a>
+                <a onclick="str2()" href="#order2" class="headers2"><li>Пироги Сладкие Трёхслойные</li></a>
+                <a onclick="str3()" href="#order3" class="headers2"><li>Пироги Сладкие и другая выпечка</li></a>
+            </ul>
+        </div>
+            
+        <article class="fon">
+            <div class="sec1">
+                <img src="images/Лого.png" class="logo2">
+                <h1 class="shine3 small">Пекарня</h1>
+            </div>
+            <div class="sec2">
+                <h1 class="shine1">Горячий хлеб</h1>
+                <h1 class="shine2">Ароматная выпечка</h1>
+            </div>
+        </article>
+    </div>
+    <main class="shop"> 
+        <article id="order1">
+            <h1 class="centerText">Пироги Сытные на заказ!</h1>
+            <div class="line"></div>
+            <div class="wrapper">
+                <div class="wrap">
+                    <img src="images/pie1.png" class="pie">
+                    <p>Пирог Капуста с мясом<br>500г</p>
+                    <p class="price">320руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_1"  onclick="to(1, 0)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie17.png" class="pie">
+                    <p>Пирог Картофель с говядиной<br>500г</p>
+                    <p class="price">330руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_2" onclick="to(1, 1)" type="button"  value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie9.png" class="pie">
+                    <p>Пирог Курица по-французски<br>500г</p>
+                    <p class="price">390руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_3" onclick="to(1, 2)" type="button" value="Добавить в корзину">
+                </div>
+            
+                <div class="wrap">
+                    <img src="images/pie1.png" class="pie">
+                    <p>Пирог Мясной с говяжим фаршем с луком<br>500г</p>
+                    <div class="priceEnd">
+                        <p class="price">310руб.</p>
+                        <input class="toBasket pointer" data-addGood="good_4" onclick="to(1, 3)" type="button" value="Добавить в корзину">
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie8.png" class="pie">
+                    <p>Пирог Рыбник c горбушей и рисом<br>500г</p>
+                    <p class="price">360руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_5" onclick="to(1, 4)" type="button"  value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie10.png" class="pie">
+                    <p>Пирог Летний со шпинатом и сыром<br>500г</p>
+                    <p class="price">340руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_6" onclick="to(1, 5)" type="button"  value="Добавить в корзину">
+                </div>
+
+
+
+                <div class="wrap">
+                    <img src="images/pie18.png" class="pie">
+                    <p>Пирог Курица с сыром и яйцом<br>500г</p>
+                    <p class="price">370руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_7" onclick="to(1, 6)" type="button" value="Добавить в корзину">
+                </div>
+
+
+                <div class="wrap">
+                    <img src="images/pie19.png" class="pie">
+                    <p>Пирог Капуста c грибами<br>500г</p>
+                    <p class="price">340руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_8" onclick="to(1, 7)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie20.png" class="pie">
+                    <p>Пирог Картофель со свининой<br>500г</p>
+                    <p class="price">340руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_9" onclick="to(1, 8)" type="button" value="Добавить в корзину">
+                </div>
+
+            
+
+
+                <div class="wrap">
+                    <img src="images/pie22.png" class="pie">
+                    <p>Пирог Курица с рисом<br>500г</p>
+                    <p class="price">350руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_10" onclick="to(1, 9)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie11.png" class="pie">
+                    <p>Пирог Зелёный лук с яйцом<br>500г</p>
+                    <p class="price">340руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_11" onclick="to(1, 10)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie21.png" class="pie">
+                    <p>Пирог Капуста с яйцом<br>500г</p>
+                    <p class="price">340руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_12" onclick="to(1, 11)" type="button" value="Добавить в корзину">
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+        <article id="order2">
+            <h1 class="centerText">Пироги Сладкие Трёхслойные на заказ!</h1>
+            <div class="line"></div>
+            <div class="wrapper">
+
+            
+                <div class="wrap">
+                    <img src="images/pie12.png" class="pie">
+                    <p>Пирог Клубника и банан<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: 2 слоя клубники и <br>1 слой банана</p>
+                    <p class="price">350руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_13" onclick="to(1, 12)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie2.png" class="pie">
+                    <p>Пирог Трёхслойный<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: чернослив, курага, лимон</p>
+                    <p class="price">370руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_14" onclick="to(1, 13)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie23.png" class="pie">
+                    <p>Пирог Лимонник<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: лимон 3 слоя</p>
+                    <p class="price">350руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_15" onclick="to(1, 14)" type="button" value="Добавить в корзину">
+                </div>
+            
+
+
+                <div class="wrap">
+                    <img src="images/pie24.png" class="pie">
+                    <p>Пирог Малинник<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: малина 3 слоя</p>
+                    <div class="priceEnd">
+                        <p class="price">350руб.</p>
+                        <input class="toBasket pointer" data-addGood="good_16" onclick="to(1, 15)" type="button" value="Добавить в корзину">
+                    </div>
+                    
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie15.png" class="pie">
+                    <p>Пирог Вишневый<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: вишня 3 слоя</p>
+                    <p class="price">350руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_17" onclick="to(1, 16)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie12.png" class="pie">
+                    <p>Пирог Брусника<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: брусника 3 слоя</p>
+                    <p class="price">350руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_18" onclick="to(1, 17)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie25.png" class="pie">
+                    <p>Пирог Киви<br>500г</p>
+                    <p class="description">Трёхслойный из песочного теста<br>Начинка: киви 3 слоя</p>
+                    <p class="price">350руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_19" onclick="to(1, 18)" type="button" value="Добавить в корзину">
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+        <article id="order3">
+            <h1 class="centerText">Пироги Сладкие и другая выпечка на заказ!</h1>
+            <div class="line"></div>
+            <div class="wrapper">
+                <div class="wrap">
+                    <img src="images/pie27.png" class="pie">
+                    <p>Пирог Яблочный Цветаевский<br>500г</p>
+                    <p class="description">Пирог сладкий из сдобного теста<br>Начинка: яблоко</p>
+                    <p class="price">340руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_20" onclick="to(1, 19)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie26.png" class="pie">
+                    <p>Пирог "Сетка" с абрикосом<br>500г</p>
+                    <p class="description">Пирог сладкий из сдобного теста<br>Начинка: чернослив</p>
+                    <p class="price">370руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_21" onclick="to(1, 20)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie4.png" class="pie">
+                    <p>Пирог Сметанник<br>500г</p>
+                    <p class="description">Пирог сладкий из сдобного теста<br>Начинка из сметаны</p>
+                    <p class="price">300руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_22" onclick="to(1, 21)" type="button" value="Добавить в корзину">
+                </div>
+
+                <div class="wrap">
+                    <img src="images/pie3.png" class="pie">
+                    <p>Пирог Королевская ватрушка<br>500г</p>
+                    <p class="description">Пирог сладкий из песочного теста</p>
+                    <div class="priceEnd">
+                        <p class="price">330руб.</p>
+                        <input class="toBasket pointer" data-addGood="good_23" onclick="to(1, 22)" type="button" value="Добавить в корзину">
+                    </div>
+                </div>
+                <div class="wrap">
+                    <img src="images/pie28.png" class="pie">
+                    <p>Пирог Сметанник шоколадный<br>500г</p>
+                    <p class="description">Пирог сладкий из сдобного теста<br>Начинка из сметаны с шоколадом</p>
+                    <p class="price">300руб.</p>
+                    <input class="toBasket pointer" data-addGood="good_24" onclick="to(1, 23)" type="button" value="Добавить в корзину">
+                </div>
+            </div>    
+        </article>
+
+
+
+
+
+        <article id="order4">
+            <h1 class="centerText">О нас</h1>
+            <div class="line"></div>
+            <div class="row">
+                <img src="images/bread.jpg" class="aboutImg">
+                <p class="aboutP">Все изделия традиционно изготавливаются вручную и небольшими партиями: только так достигается фирменное качество и свежесть продукции.  Мы не используем искусственные добавки, улучшители и консерванты, распространенные в крупном хлебном производстве. Выпуская натуральную продукцию, мы жертвуем сроком хранения, но именно это является визитной карточкой нашей сети.</p>
+            </div>
+            <div class="row2">
+                <p class="aboutP">У нас не только вкусные пироги, но и всегда свежая выпечка и большой выбор вкусняшек к чаю. Мы гарантируем качество каждого изделия, строго контролируя производство на всех этапах, начиная с закупки сырья. Вся вчерашняя продукция продаётся со скидкой 50%. Приходите по <a href="#pF1" class="to scroll">адресу</a> и покупайте выпечку, которой нет на сайте!</p>
+                <img src="images/bread2.jpg" class="aboutImg">
+            </div>
+        </article>
+
+
+        <article id="order5">
+            <h1 class="centerText">Корзина</h1>
+            <div class="line"></div>
+            
+            <div class="basket">
+                <div class="BasketCardHead">
+                    <p class="pos1">№</p>
+                    <p class="pos2" class="pointer" data-type="string">Название</p>
+                    <p class="pos3" class="pointer" data-type="number">Цена/ш, &#8381;</p>
+                    <p class="pos4" class="pointer" data-type="number">Количество</p>
+                    <p class="pos5" class="pointer" data-type="number">Итог, &#8381;</p>
+                </div>
+                <div class="cart">
+                    
+
+                
+                </div>
+                <div class="buttons">
+                    <input id="reload" class="update pointer" onclick="update_goods()" type="button" value="Обновить корзину &#8635;">
+                    <input id="delAll" class="update pointer" type="button" value="Очистить корзину &#128465;">
+                </div>
+                
+            </div>
+            
+            <p id="Nan">Корзина пуста</p>
+            <div id="formTopic">
+                <h1 class="centerText">Оформление заказа</h1>
+                <div class="line"></div>
+            </div>
+            
+            <form action="order.php" id="formOrder" class="form_order" method="POST">
+                <div class="sect1">
+                    <div class="col">
+                        <label for="name_client">Ваше имя</label>
+                        <input type="text" id="name_client" name="name_client">
+                    </div>
+                    <div class="col">
+                        <label for="email_client">Ваш email</label>
+                        <input type="email" id="email_client" name="email" maxlength="50" required>
+                    </div>
+                    
+                    <div class="col">
+                        <label for="tel_client">Телефон</label>
+                        <input type="tel" id="tel_client" name="tel" required>
+                    </div>
+                    
+                    <div class="col2">
+                        <input type="button" onclick="deliver()" class="choice" value="Доставка">
+                        <p class="or">&nbsp;или&nbsp;</p>
+                        <input type="button" onclick="selfer()" class="choice" value="Самовывоз">
+                    </div>
+                    
+                    <div class="col" id="deliveryText">
+                        <label id="address_client_label" for="address_client">Адрес доставки</label>
+                        <input type="text" id="address_client" name="address" required>
+                    </div>
+
+                    <select name="self_address" id="selfText" required>
+                        <option value="0" disabled selected>Адрес пекарни</option>
+                        <option value="1">Ул.Радищева 6/1, магазин "Эконом"</option>
+                        <option value="2">Ул.Ульяновская 195, рынок "АЛИ", павильон 3, место 3</option>
+                        <option value="3">Ул.Автобусная 75/1, магазин "Эконом"</option>
+                        <option value="4">Ул.Суворова 49 А, магазин "Ветеран плюс"</option>
+                        <option value="5">Ул. Гамарника 72 А, магазин "Дилан"</option>
+                    </select>
+                </div>
+                <div class="sect1">
+                    <div class="col">
+                        <label for="dop">Дополнительная инфо</label>
+                        <textarea id="dop" name="other" cols="32" rows="8" placeholder="Примечания к заказу"></textarea>
+                    </div>
+                    
+                    <div class="col" id="coll">
+                        <div class="centerText very price_result2">0 &#8381;</div>
+                        <p class="centerText very">Оплата при получении</p>
+                        <input id="n" class="none" type="text" name="n" value="1" hidden></input>
+                        <input name="Ord" id="ord_text" type="hidden"></input>
+                        <input type="submit" name="submit" class="toOrder pointer" id="subm" value="Заказать">
+                    </div>
+                </div>
+
+            </form>
+        </article>
+        <div>
+            <ul class="classPies2">
+                <a onclick="str1()" href="#order1" class="headers2"><li>Пироги Сытные</li></a>
+                <a onclick="str2()" href="#order2" class="headers2"><li>Пироги Сладкие Трёхслойные</li></a>
+                <a onclick="str3()" href="#order3" class="headers2"><li>Пироги Сладкие и другая выпечка</li></a>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+        <div class="sec">
+            <p id="pF1">Контакты:</p>
+            <ul>
+                <li>тел. 8 914 201 86 29</li>
+                <li>тел. 8 999 089 52 51</li>
+            </ul>
+            <p>@2023 ПЕКАРНЯ "ПечьМагъ"</p>
+        </div>
+        <div class="sec">
+            <p>Наша продукция представлена по адресам:</p>
+            <ul>
+                <li>Ул.Радищева 6/1, магазин "Эконом"</li>
+                <li>Ул.Ульяновская 195, рынок "АЛИ", павильон 3, место 3</li>
+                <li>Ул.Автобусная 75/1, магазин "Эконом"</li>
+                <li>Ул.Суворова 49 А, магазин "Ветеран плюс"</li>
+                <li>Ул. Гамарника 72 А, магазин "Дилан"</li>
+            </ul>
+        </div>
+        <div class="sec">
+            <a href="https://t.me/pechmagkhv"><img class="telega" src="images/telega.png"></a>
+        </div>
+        
+    </footer>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

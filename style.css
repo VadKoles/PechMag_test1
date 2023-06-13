@@ -1,0 +1,1493 @@
+/*Ш А П К А*/
+
+header{
+    top: 0px;
+    background-color: #9e660c;
+    height: 105px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+}
+h1, p{
+    cursor: context-menu;
+}
+.punkts{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    width: 50vw;
+}
+.headers{
+    text-decoration: none;
+    color: #fff;
+}
+.headers:hover{
+    color: #f8e3ae;
+    text-decoration: underline 3px;
+}
+nav{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    
+}
+.logo{
+    width: 110px;
+    height: 100px;
+    animation: rubberBand 2s 1;
+}
+.basketImg{
+    width: 60px;
+    height: 50px;
+}
+.basketNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 12vw;
+    font-size: 25px;
+}
+.classPies{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    font-size: 25px;
+    padding-top: 105px;
+
+}
+.classPies2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    font-size: 25px;
+    background-color: #FFF8E6;
+    margin-bottom: 0;
+    border-top: solid #6b4609 3px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.headers2{
+    text-decoration: none;
+    padding: 10px;
+    color: #6b4609;
+    transition: 1s;
+    border: dashed 2px #463201;
+    border-radius: 50px;
+}
+.headers2:hover{
+    color: #dfac55;
+    padding: 20px;
+    
+}
+.shine{
+    color: rgb(255, 246, 226);
+}
+.naver{
+    background-color: rgb(255, 246, 226);
+}
+/*Г Л А В Н А Я*/
+#order1{
+    display: block;
+}
+#order2{
+    display: none;
+}
+#order3{
+    display: none;
+}
+#order4{
+    display: none;
+}
+#order5{
+    display: none;
+}
+body{
+    margin: 0;
+    background-color: #FFF8E6;
+    color: #463201;
+    background-image: url('images/паттерн.jpg');
+}
+main{
+    width: 100vw;
+    margin-bottom: 0px;
+}
+.fon{
+    display: flex;
+    background-color: #FFF8E6;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("images/фонХлеб.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 600px;
+    color: #FFF8E6;
+    
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sec2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 60px;
+}
+.bigp{
+    font-size: 20px;
+}
+.small{
+    font-size: 30px;
+}
+.logo2{
+    width: 300px;
+    height: 280px;
+    padding: 30px;
+    border: solid 4px #f2dbb3;
+    border-radius: 130px;
+    transition: 2.5s;
+}
+.logo2:hover{
+    padding: 60px;
+    border: dashed 8px #dfac55;
+    border-radius: 80px;
+    rotate: 360deg;
+}
+.centerText{
+    text-align: center;
+}
+.line {
+    display: block;
+    width: 33vw;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 50px;
+  }
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.aboutImg{
+    width: 350px;
+    height: 250px;
+    transition: 1s;
+}
+.aboutImg:hover{
+    transform: scale(1.1);
+}
+.aboutP{
+    width: 40%;
+    font-size: 23px;
+    color: #463201;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.to{
+    text-decoration: none;
+    color: #dfac55;
+}
+.to:hover{
+    color: #846310;
+}
+/*Корзина*/
+.Basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.BasketCard{
+    background-color: #f2dbb3;
+    color: #6b4609;
+    width: 75vw;
+    height: 60px;
+    z-index: 901;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+
+    align-items: center;
+}
+
+.BasketCardHead{
+    background-color:#e6bd75;
+    color: #6b4609;
+    width: 75vw;
+    height: 60px;
+    z-index: 901;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.pos1{
+    position: relative;
+    width: 15px;
+    left: 5%;
+}
+.count{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    left: 15%;
+}
+.count_increase{
+    display: flex;
+    flex-direction: column;
+}
+.increase{
+    width: 23px;
+    height: 23px;
+    background-color: #eaa33f;
+    border: none;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.price_count{
+    margin-right: 5px;
+}
+#plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#minus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pos2{
+    position: relative;
+    width: 400px;
+    left: 10%;
+}
+.pos3{
+    position: relative;
+    width: 120px;
+    left: 12%;
+}
+.pos4{
+    position: relative;
+    width: 110px;
+    left: 15%;
+}
+.pos5{
+    position: relative;
+    width: 120px;
+    left: 20%;
+}
+.pos6{
+    position: relative;
+    left: 22%;
+}
+
+.btn-danger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaa33f;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+}
+.update{
+    width: 150px;
+    height: 25px;
+    font-size: 14px;
+    border: none;
+    color: #6b4609;
+    border-radius: 2px;
+    background-color: #e6bd75;
+    margin-bottom: 20px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+#Nan{
+    text-align: center;
+}
+
+/*Карточка*/
+.wrap{
+    width: 330px;
+    margin: 0px 50px 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px #9e660c; 
+    border-radius: 50px;
+    padding: 20px 0px 20px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #FFF8E6;
+    z-index: 900;
+    text-align: center;
+}
+
+.pie{
+    width: 250px;
+    height: 200px;
+    transition: 1s;
+}
+.pie:hover{
+    transform: scale(1.1);
+}
+.toBasket{
+    background-color: #9e660c;
+    color: #FFF8E6;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 0px 4px 4px rgba(82, 66, 2, 0.25), 0px 4px 4px rgba(82, 66, 2, 0.25), 0px 4px 4px rgba(82, 66, 2, 0.25), 0px 2px 2px rgba(82, 66, 2, 0.25), inset 0px 4px 4px rgba(82, 66, 2, 0.25);
+    border: none;
+    
+}
+.px{
+    font-size: 20px;
+}
+
+.toBasket:active{
+    background-color: #6b4609;
+}
+.price{
+    font-size: 30px;
+    font-weight: bold;
+    color: #9e660c;
+}
+.description{
+    font-style: italic;
+    font-size: 18px;
+}
+/*Форма*/
+.col{
+   display: flex;
+   flex-direction: column; 
+   margin-bottom: 15px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    font-size: 18px;
+}
+select{
+    margin-bottom: 15px;
+}
+.form_order{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.sect1{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+form > div > div > input{
+    width: 300px;
+    height: 26px;
+    background-color: #FFF8E6;
+    border: #9e660c 3px solid;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(82, 66, 2, 0.096), 0px 4px 4px rgba(82, 66, 2, 0.096), 0px 4px 4px rgba(82, 66, 2, 0.096), 0px 2px 2px rgba(82, 66, 2, 0.096), inset 0px 4px 4px rgba(82, 66, 2, 0.096);
+}
+select{
+    width: 300px;
+    height: 26px;
+    background-color: #FFF8E6;
+    border: #9e660c 3px solid;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(82, 66, 2, 0.096), 0px 4px 4px rgba(82, 66, 2, 0.096), 0px 4px 4px rgba(82, 66, 2, 0.096), 0px 2px 2px rgba(82, 66, 2, 0.096), inset 0px 4px 4px rgba(82, 66, 2, 0.096);
+}
+form > div > div > label{
+    font-size: 21px;
+}
+textarea{
+    resize: none;
+    background-color: #FFF8E6;
+    border: #9e660c 3px solid;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.very{
+    background-color: #e6bd75;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 30%;
+}
+.choice{
+    width: 135px;
+    height: 26px;
+    cursor: pointer;
+}
+.toOrder{
+    background-color: #9e660c;
+    color: #FFF8E6;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 0px 4px 4px rgba(82, 66, 2, 0.25), 0px 4px 4px rgba(82, 66, 2, 0.25), 0px 4px 4px rgba(82, 66, 2, 0.25), 0px 2px 2px rgba(82, 66, 2, 0.25), inset 0px 4px 4px rgba(82, 66, 2, 0.25);
+    border: none;
+    width: 300px;
+    height: 40px;
+}
+
+/*F O O T E R*/
+footer{
+    width: 100vw;
+    height: 200px;
+    background-color: #6b4609;
+    color: #f2dbb3;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.secF{
+    display: flex;
+    flex-direction: column;
+}
+#pF1{
+    margin-top: 0px;
+    padding-top: 10px;
+}
+.telega{
+    width: 100px;
+    height: 100px;
+}
+@media (min-width: 1880px){
+    .pos1{
+        left: 5%;
+    }
+    .pos2{
+        left: 17%;
+    }
+    .pos3{
+        left: 24%;
+    }
+    .count{
+        left: 30%;
+    }
+    .pos4{
+        left: 30%;
+    }
+    .pos5{
+        left: 36%;
+    }
+    .pos6{
+        left: 42%;
+    }
+    .wrap {
+        width: 360px;
+        min-height: 450px;
+        font-size: 23px;
+    }
+    .aboutP{
+        width: 50%;
+        font-size: 27px;
+    }
+    .punkts {
+        font-size: 29px;
+        width: 50vw;
+    }
+    header {
+        height: 120px;
+    }
+    .classPies {
+        height: 65px;
+        font-size: 29px;
+        padding-top: 120px;
+    }
+}
+@media (min-width: 1650px) and (max-width: 1880px) {
+    .pos1{
+        left: 5%;
+    }
+    .pos2{
+        left: 10%;
+    }
+    .pos3{
+        left: 18%;
+    }
+    .count{
+        left: 24%;
+    }
+    .pos4{
+        left: 24%;
+    }
+    .pos5{
+        left: 30%;
+    }
+    .pos6{
+        left: 35%;
+    }
+}
+@media (max-width: 1370px) {
+    .pos1{
+        left: 2%;
+    }
+    .pos2{
+        left: 8%;
+        width: 340px;
+    }
+    .pos3{
+        left: 10%;
+    }
+    .count{
+        left: 12%;
+    }
+    .pos4{
+        left: 12%;
+    }
+    .pos5{
+        left: 16%;
+    }
+    .pos6{
+        left: 16%;
+    }
+    .wrap {
+        width: 270px;
+        font-size: 18px;
+    }
+    .logo{
+        width: 80px;
+        height: 75px;
+    }
+    .aboutP{
+        width: 40%;
+        font-size: 20px;
+    }
+    .punkts {
+        font-size: 22px;
+        width: 50vw;
+    }
+    header {
+        height: 80px;
+    }
+    .classPies {
+        height: 30px;
+        font-size: 22px;
+        padding-top: 80px;
+    }
+    .classPies2 {
+        height: 120px;
+        font-size: 22px;
+    }
+    .fon{
+        height: 400px;
+    }
+    .logo2{
+        width: 200px;
+        height: 180px;
+        border-radius: 90px;
+        padding: 20px;
+    }
+    .logo2:hover{
+        padding: 40px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .small{
+        font-size: 26px;
+    }
+    .BasketCardHead{
+        font-size: 22px;
+    }
+    .BasketCard{
+        font-size: 22px;
+    }
+    .basketImg{
+        width: 50px;
+        height: 40px;
+    }
+    .basketNav{
+        font-size: 22px;
+    }
+    .pie{
+        width: 220px;
+        height: 170px;
+    }
+    .toBasket{
+        font-size: 22px;
+    }
+    .price{
+        font-size: 26px;
+    }
+    footer{
+        font-size: 20px;
+        height: 175px;
+    }
+}
+@media (max-width: 1190px) {
+    .pos1{
+        left: 1%;
+    }
+    .pos2{
+        left: 5%;
+        width: 230px;
+    }
+    .pos3{
+        left: 7%;
+    }
+    .count{
+        left: 7%;
+    }
+    .pos4{
+        left: 7%;
+    }
+    .pos5{
+        left: 12%;
+    }
+    .pos6{
+        left: 16%;
+    }
+    .wrap {
+        width: 250px;
+        margin: 0px 30px 80px 30px;
+        font-size: 17px;
+    }
+    .logo{
+        width: 80px;
+        height: 75px;
+    }
+    .aboutP{
+        width: 40%;
+        font-size: 17px;
+    }
+    .aboutImg{
+        width: 300px;
+        height: 200px;
+    }
+    .punkts {
+        font-size: 18px;
+        width: 50vw;
+    }
+    header {
+        height: 80px;
+    }
+    .headers2{
+        padding: 6px;
+        border: dashed 1px #463201;;
+    }
+    .headers2:hover{
+        padding: 13px;
+    }
+    .classPies {
+        height: 30px;
+        font-size: 18px;
+        padding-top: 80px;
+
+    }
+    .classPies2 {
+        height: 90px;
+        font-size: 18px;
+    }
+    .fon{
+        height: 350px;
+    }
+    .logo2{
+        width: 180px;
+        height: 160px;
+        border-radius: 70px;
+        padding: 15px;
+    }
+    .logo2:hover{
+        padding: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .line{
+        height: 1.5px;
+    }
+    .small{
+        font-size: 23px;
+    }
+    .BasketCardHead{
+        font-size: 18px;
+    }
+    .BasketCard{
+        font-size: 18px;
+    }
+    .basketImg{
+        width: 45px;
+        height: 35px;
+    }
+    .basketNav{
+        font-size: 19px;
+    }
+    .pie{
+        width: 180px;
+        height: 150px;
+    }
+    .toBasket{
+        font-size: 18px;
+        width: 190px;
+        height: 22px;
+    }
+    .price{
+        font-size: 22px;
+    }
+    footer{
+        font-size: 17px;
+        height: 150px;
+    }
+    form > div > div > label {
+        font-size: 18px;
+    }
+    form > div > div > input {
+        width: 250px;
+        height: 23px;
+        font-size: 14px;
+    }
+    .choice {
+        width: 110px;
+        height: 23px;
+    }
+    textarea {
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .very {
+        padding: 6px;
+        font-size: 18px;
+        border-radius: 30%;
+    }
+    .toOrder {
+        font-size: 22px;
+        width: 270px;
+        height: 35px;
+    }
+    .update {
+        width: 130px;
+        height: 22px;
+        font-size: 13px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 1000px) {
+    .pos1{
+        width: 15px;
+        left: 1%;
+    }
+    .pos2{
+        width: 250px;
+        left: 5%;
+    }
+    .pos3{
+        width: 80px;
+        left: 10%;
+    }
+    .count{
+        width: 60px;
+        left: 16%;
+    }
+    .pos4{
+        width: 60px;
+        left: 16%;
+    }
+    .pos5{
+        width: 60px;
+        left: 25%;
+    }
+    .pos6{
+        left: 28%;
+    }
+    .wrap {
+        width: 220px;
+        margin: 0px 20px 80px 20px;
+        font-size: 15px;
+    }
+    .btn-danger {
+        width: 23px;
+        height: 23px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+    .increase{
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+    .punkts {
+        font-size: 16px;
+        width: 47vw;
+    }
+    .logo{
+        width: 70px;
+        height: 65px;
+    }
+    .basketImg {
+        width: 35px;
+        height: 25px;
+    }
+    .basketNav {
+        font-size: 17px;
+    }
+    header {
+        height: 70px;
+    }
+    .classPies {
+        height: 30px;
+        font-size: 16px;
+        padding-top: 70px;
+        
+    }
+    .classPies2{
+        height: 80px;
+        font-size: 16px;
+        border-top-right-radius: 40%;
+        border-top-left-radius: 40%;
+    }
+    .headers2{
+        border: dashed 1px #463201;
+    }
+    .BasketCardHead {
+        width: 700px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    .BasketCard {
+        width: 700px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    .telega{
+        width: 80px;
+        height: 80px;
+    }
+    .aboutP {
+        width: 45%;
+        font-size: 15px;
+    }
+    .aboutImg {
+        width: 250px;
+        height: 170px;
+
+    }
+    h1{
+        font-size: 28px;
+    }
+    .small{
+        font-size: 17px;
+    }
+    .fon {
+        height: 220px;
+    }
+    .logo2{
+        width: 120px;
+        height: 110px;
+        border-radius: 60px;
+        padding: 15px;
+    }
+    .logo2:hover{
+        padding: 25px;
+    }
+    form > div > div > label {
+        font-size: 16px;
+    }
+    form > div > div > input {
+        width: 220px;
+        height: 20px;
+        font-size: 13px;
+    }
+    .choice {
+        width: 96.5px;
+        height: 23px;
+    }
+    .or{
+        font-size: 16px;
+    }
+    textarea {
+        border-radius: 6px;
+        font-size: 13px;
+    }
+    .very {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 30%;
+    }
+    .toOrder {
+        font-size: 20px;
+        width: 245px;
+        height: 32px;
+    }
+    .update {
+        width: 125px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 750px) {
+    .pos1{
+        width: 15px;
+        left: 1%;
+    }
+    .pos2{
+        width: 190px;
+        left: 4%;
+    }
+    .pos3{
+        width: 65px;
+        left: 6%;
+    }
+    .count{
+        width: 60px;
+        left: 10%;
+    }
+    .pos4{
+        width: 60px;
+        left: 10%;
+    }
+    .pos5{
+        width: 50px;
+        left: 18%;
+    }
+    .pos6{
+        left: 20%;
+    }
+    .btn-danger {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        border-radius: 7px;
+    }
+    .increase{
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .punkts {
+        font-size: 14px;
+        width: 52vw;
+    }
+    .logo{
+        width: 55px;
+        height: 50px;
+    }
+    .basketImg {
+        width: 35px;
+        height: 25px;
+    }
+    .basketNav {
+        font-size: 14px;
+        width: 15vw;
+    }
+    header {
+        height: 60px;
+    }
+    .classPies {
+        height: 30px;
+        font-size: 13px;
+        padding-top: 60px;
+    }
+    .classPies2{
+        height: 70px;
+        font-size: 13px;
+        border-top-right-radius: 30%;
+        border-top-left-radius: 30%;
+    }
+    .headers2{
+        padding: 7px;
+    }
+    .headers2:hover{
+        padding: 10px;
+    }
+    .BasketCardHead {
+        width: 500px;
+        height: 40px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .BasketCard {
+        width: 500px;
+        height: 40px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    footer{
+        font-size: 13px;
+        height: 126px;
+    }
+    .telega{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .aboutP {
+        width: 70%;
+        font-size: 13px;
+    }
+    .aboutImg {
+        width: 250px;
+        height: 170px;
+
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .small{
+        font-size: 20px;
+    }
+    .fon {
+        height: 280px;
+    }
+    .logo2{
+        width: 150px;
+        height: 130px;
+        border-radius: 60px;
+        padding: 15px;
+    }
+    .logo2:hover{
+        padding: 25px;
+    }
+    form > div > div > label {
+        font-size: 16px;
+    }
+    form > div > div > input {
+        width: 220px;
+        height: 20px;
+        font-size: 13px;
+    }
+    #Nan{
+        font-size: 13px;
+    }
+    .choice {
+        width: 96.5px;
+        height: 23px;
+    }
+    .or{
+        font-size: 16px;
+    }
+    textarea {
+        border-radius: 6px;
+        font-size: 13px;
+    }
+    .very {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 30%;
+    }
+    .toOrder {
+        font-size: 20px;
+        width: 245px;
+        height: 32px;
+    }
+    .update {
+        width: 125px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 550px) {
+    .pos1{
+        width: 15px;
+        left: 0%;
+    }
+    .pos2{
+        width: 105px;
+        left: 1%;
+    }
+    .pos3{
+        width: 55px;
+        left: 3%;
+    }
+    .count{
+        width: 30px;
+        left: 4%;
+    }
+    .pos4{
+        width: 40px;
+        left: 5%;
+    }
+    .pos5{
+        width: 50px;
+        left: 15%;
+    }
+    .pos6{
+        left: 12%;
+    }
+    .btn-danger {
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+        border-radius: 7px;
+    }
+    .increase{
+        width: 16px;
+        height: 16px;
+        font-size: 13px;
+        border-radius: 7px;
+    }
+    .punkts {
+        font-size: 11px;
+        width: 52vw;
+        margin-left: -35px;
+    }
+
+    nav{
+        width: 80vw;
+    }
+    .logo{
+        width: 55px;
+        height: 50px;
+    }
+    .basketImg {
+        width: 32px;
+        height: 23px;
+    }
+    .basketNav {
+        font-size: 12px;
+        width: 70px;
+    }
+    header {
+        height: 60px;
+    }
+    .classPies {
+        height: 30px;
+        font-size: 12px;
+        padding-top: 60px;
+        margin-left: -40px;
+    }
+    .classPies2{
+        height: 70px;
+        font-size: 12px;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+        margin-left: -40px;
+    }
+    .headers2{
+        padding: 7px;
+        max-width: 100px;
+    }
+    .headers2:hover{
+        padding: 9px;
+    }
+    .BasketCardHead {
+        width: 92vw;
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .BasketCard {
+        width: 92vw;
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    footer{
+        font-size: 11px;
+        height: 280px;
+        flex-wrap: wrap-reverse;
+    }
+    .telega{
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .shine1{
+        font-size: 20px;
+    }
+    .shine2{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .aboutP {
+        width: 70%;
+        font-size: 13px;
+    }
+    .aboutImg {
+        width: 250px;
+        height: 170px;
+
+    }
+    .wrap{
+        width: 250px;
+        margin-bottom: 40px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .sec2{
+        width: 150px;
+    }
+    .small{
+        font-size: 16px;
+    }
+    .fon {
+        height: 240px;
+    }
+    .logo2{
+        width: 130px;
+        height: 110px;
+        border-radius: 60px;
+        padding: 15px;
+    }
+    .logo2:hover{
+        padding: 20px;
+    }
+    .form_order{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sect1{
+        align-items: center;
+    }
+    #coll{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    form > div > div > label {
+        font-size: 13px;
+    }
+    form > div > div > input {
+        width: 220px;
+        height: 18px;
+        font-size: 12px;
+    }
+    #Nan{
+        font-size: 12px;
+    }
+    .choice {
+        width: 100px;
+        height: 23px;
+    }
+    .or{
+        font-size: 13px;
+    }
+    textarea {
+        border-radius: 6px;
+        font-size: 12px;
+        width: 220px;
+    }
+    
+    .very {
+        padding: 4px;
+        font-size: 14px;
+        border-radius: 30%;
+        width: 220px;
+    }
+    .toOrder {
+        font-size: 20px;
+        width: 220px;
+        height: 28px;
+    }
+    .update {
+        width: 115px;
+        height: 18px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 329px) {
+    .pos1{
+        width: 15px;
+        left: 0%;
+    }
+    .pos2{
+        width: 70px;
+        left: 1%;
+    }
+    .pos3{
+        width: 55px;
+        left: 4%;
+    }
+    .count{
+        width: 30px;
+        left: 1%;
+    }
+    .pos4{
+        width: 40px;
+        left: 3%;
+    }
+    .pos5{
+        width: 50px;
+        left: 12%;
+    }
+    .pos6{
+        left: 4%;
+    }
+    .btn-danger {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+        border-radius: 7px;
+    }
+    .increase{
+        width: 15px;
+        height: 15px;
+        font-size: 13px;
+        border-radius: 7px;
+    }
+    .punkts {
+        font-size: 9px;
+        width: 52vw;
+        margin-left: -35px;
+    }
+    .logo{
+        width: 55px;
+        height: 50px;
+    }
+    .basketImg {
+        width: 32px;
+        height: 23px;
+    }
+    .basketNav {
+        font-size: 10px;
+        width: 70px;
+    }
+    header {
+        height: 60px;
+    }
+    .classPies {
+        height: 30px;
+        font-size: 10px;
+        padding-top: 60px;
+        margin-left: -40px;
+    }
+    .classPies2{
+        height: 70px;
+        font-size: 10px;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+        margin-left: -40px;
+    }
+    .headers2{
+        padding: 7px;
+        max-width: 100px;
+    }
+    .headers2:hover{
+        padding: 9px;
+    }
+    .BasketCardHead {
+        width: 92vw;
+        height: 40px;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .BasketCard {
+        width: 92vw;
+        height: 40px;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .shine1{
+        font-size: 17px;
+    }
+    .shine2{
+        font-size: 17px;
+        margin-left: 2px;
+    }
+    .aboutP {
+        width: 70%;
+        font-size: 11px;
+    }
+    .aboutImg {
+        width: 210px;
+        height: 140px;
+    }
+    .logo2{
+        width: 100px;
+        height: 80px;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    .logo2:hover{
+        padding: 15px;
+    }
+    footer{
+        font-size: 10px;
+        height: 280px;
+        flex-wrap: wrap-reverse;
+    }
+    .telega{
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .wrap{
+        font-size: 14px;
+    }
+    #Nan{
+        font-size: 11px;
+    }
+}
